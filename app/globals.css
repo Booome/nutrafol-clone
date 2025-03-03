@@ -2,3 +2,22 @@
 @plugin "daisyui" {
   themes: light --default;
 }
+
+@font-face {
+  font-family: "Helvetica";
+  src:
+    url("/fonts/Helvetica.ttf") format("opentype"),
+    url("/fonts/helvetica-light-587ebe5a59211.ttf") format("opentype");
+}
+
+@theme {
+  --font-sans: "Dinamo Regular", "Helvetica", Arial, sans-serif;
+
+  --color-my-primary: #007a73;
+  --color-my-primary-hover: #065954;
+
+  --color-my-secondary: #ffc942;
+  --color-my-secondary-hover: #f6b615;
+
+  --color-my-tertiary: #1379cc;
+}
