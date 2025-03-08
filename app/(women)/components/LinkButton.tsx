@@ -15,7 +15,7 @@ export function LinkButton({
     <Link
       href={href}
       className={cn(
-        "bg-my-primary hover:bg-my-primary-hover text-base-100 hover:[&>svg]:bg-my-primary flex items-center justify-center gap-2 rounded-sm px-4 py-3 font-sans text-base",
+        "bg-my-primary hover:bg-my-primary-hover text-base-100 hover:[&>svg]:bg-my-primary flex items-center justify-center gap-2 rounded-sm px-4 py-3 h-12 lg:h-14 font-sans text-base",
         className,
       )}
     >

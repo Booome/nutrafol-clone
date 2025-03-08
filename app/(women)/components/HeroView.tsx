@@ -1,7 +1,7 @@
 "use client";
 
 import pillCanvas from "@/app/assets/pill-canvas.png";
-import { xlBreakpoint } from "@/lib/constants";
+import { colorMySecondary, xlBreakpoint } from "@/lib/constants";
 import { cn, getComputedPropertyValue } from "@/lib/utils";
 import { AnimationScope, useAnimate, useInView } from "motion/react";
 import Image from "next/image";
@@ -95,7 +95,7 @@ function useLayout() {
   }, [dotLine0DotAnimate, dotLine0DotAnimationScope]);
 
   const onFormulaImageInView = useCallback(async () => {
-    const dotColor = getComputedPropertyValue("--color-my-secondary");
+    const dotColor = colorMySecondary;
 
     if (window.innerWidth < xlBreakpoint) {
       await dotLine0DotAnimate(
@@ -166,9 +166,9 @@ function useLayout() {
           { duration: 0.5 },
         ),
       ]);
-
-      setFormulaImageInitialized(true);
     }
+
+    setFormulaImageInitialized(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -415,16 +415,10 @@ function Heading1({ className }: { className?: string }) {
       </h1>
 
       <div className="mt-5 md:mt-12 lg:mt-15 xl:mt-16 flex items-center justify-center xl:justify-start gap-1 md:gap-2">
-        <LinkButton
-          className="w-40 xl:w-42 text-sm xl:py-4"
-          href="/products/women"
-        >
+        <LinkButton className="w-40 xl:w-42 text-sm" href="/products/women">
           Show Women
         </LinkButton>
-        <LinkButton
-          className="w-40 xl:w-42 text-sm xl:py-4"
-          href="/products/men"
-        >
+        <LinkButton className="w-40 xl:w-42 text-sm" href="/products/men">
           Show Men
         </LinkButton>
       </div>
@@ -558,7 +552,7 @@ function FormulaParagraphs({
 function ShowNowButton({ className }: { className?: string }) {
   return (
     <LinkButton
-      className={cn("w-40 text-sm xl:py-4", className)}
+      className={cn("w-40 text-sm", className)}
       href="/products/women"
     >
       Show Now

@@ -10,6 +10,23 @@
     url("/fonts/helvetica-light-587ebe5a59211.ttf") format("opentype");
 }
 
+:root {
+  --dot-line-vertical: repeating-linear-gradient(
+    to bottom,
+    lightgray 0%,
+    lightgray 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  --dot-line-horizontal: repeating-linear-gradient(
+    to right,
+    lightgray 0%,
+    lightgray 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
 @theme {
   --font-sans: "Dinamo Regular", "Helvetica", Arial, sans-serif;
 
