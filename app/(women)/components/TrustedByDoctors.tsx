@@ -26,7 +26,7 @@ const DOCTORS = [
 
 export function TrustedByDoctors() {
   return (
-    <section className="max-w-[var(--width-max)] mx-auto bg-base-100 text-center px-6 md:px-8 lg:px-12 xl:px-28 pt-10 md:pt-14 lg:pt-25 xl:pt-36">
+    <section className="max-w-[var(--width-max)] mx-auto bg-base-100 text-center px-6 md:px-8 lg:px-12 xl:px-28 py-10 md:py-14 lg:py-25 xl:py-28">
       <div className="md:flex md:items-center md:justify-between md:px-4">
         <h2 className="text-[28px] md:text-4xl lg:text-5xl xl:text-6xl font-serif">
           Trusted by <em>Doctors</em>
@@ -71,7 +71,7 @@ export function TrustedByDoctors() {
         ))}
       </div>
 
-      <p className="text-xs my-6 lg:my-4 text-base-content/50">
+      <p className="text-xs mt-6 lg:mt-4 text-base-content/50">
         Expert partners compensated for their opinion and experience.
       </p>
     </section>
