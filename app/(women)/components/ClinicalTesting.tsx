@@ -53,8 +53,8 @@ export function ClinicalTesting() {
   }, [isInView]);
 
   return (
-    <div className="max-w-[var(--width-max)] mx-auto bg-base-100 pt-4 md:pt-6 lg:pt-16">
-      <section className="bg-teal-950 text-base-300 px-6 md:px-8 lg:px-12 xl:px-28 pt-8 md:pt-10 lg:pt-14 xl:pt-18 pb-10 md:pb-12 lg:pb-16 xl:pb-20">
+    <div className="bg-teal-950 pt-4 md:pt-6 lg:pt-16">
+      <section className="max-w-[var(--width-max)] mx-auto text-base-300 px-6 md:px-8 lg:px-12 xl:px-28 pt-8 md:pt-10 lg:pt-14 xl:pt-18 pb-10 md:pb-12 lg:pb-16 xl:pb-20">
         <h2 className="text-[28px] md:text-[34px] lg:text-[46px] xl:text-[48px] font-serif">
           Clinical testing isn&apos;t optional -<br /> it&apos;s our standard.
         </h2>
