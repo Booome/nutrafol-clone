@@ -219,7 +219,7 @@ export function SuccessExamples() {
         Join the 1.5 million+ people growing.
       </h2>
 
-      <div className="flex items-center justify-between mt-10 md:mt-14 relative mx-auto lg:w-200">
+      <div className="flex items-center justify-between mt-10 md:mt-14 relative mx-auto w-full lg:w-200">
         <button
           className="bg-base-content/15 hover:bg-base-content/20 rounded p-1 cursor-pointer"
           onClick={() => {
