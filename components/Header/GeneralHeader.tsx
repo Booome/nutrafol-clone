@@ -24,12 +24,12 @@ import { SearchIcon } from "../SearchIcon";
 
 export function GeneralHeader() {
   const headerClasses =
-    "mx-auto w-full max-w-[1600px] transition-all lg:px-6 w-full";
+    "w-full max-w-[var(--width-max)] mx-auto transition-all lg:px-6 w-full";
   const header1Ref = useRef<HTMLDivElement>(null);
   const productsLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
-    if (window.innerWidth > lgBreakpoint) {
+    if (window.innerWidth >= lgBreakpoint) {
       return;
     }
 

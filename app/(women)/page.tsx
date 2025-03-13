@@ -1,21 +1,25 @@
-import { FindYourFormula } from "./components/FindYourFormula";
+import { ClinicalTesting } from "./components/ClinicalTesting";
+import { FindYourRootCause } from "./components/FindYourRootCause";
+import { Fottnotes } from "./components/Fottnotes";
 import { GrowthVision } from "./components/GrowthVision";
 import { HeroView } from "./components/HeroView";
-import { NavToRootCause } from "./components/NavToRootCause";
+import { JoinTheCommunity } from "./components/JoinTheCommunity";
+import { QuestionAndAnsower } from "./components/QuestionAndAnsower";
+import { SuccessExamples } from "./components/SuccessExamples";
+import { TrustedByDoctors } from "./components/TrustedByDoctors";
 
 export default function Page() {
   return (
-    <>
+    <div>
       <HeroView />
-      <NavToRootCause />
-      <FindYourFormula />
+      <FindYourRootCause />
       <GrowthVision />
-
-      {Array.from({ length: 100 }).map((_, index) => (
-        <div key={index} className="h-10 w-10 bg-red-500">
-          {index}
-        </div>
-      ))}
-    </>
+      <SuccessExamples />
+      <TrustedByDoctors />
+      <ClinicalTesting />
+      <QuestionAndAnsower />
+      <JoinTheCommunity />
+      <Fottnotes />
+    </div>
   );
 }

@@ -11,19 +11,29 @@
 }
 
 :root {
+  --width-max: 1600px;
+
   --dot-line-vertical: repeating-linear-gradient(
     to bottom,
-    lightgray 0%,
-    lightgray 2px,
+    gray 0%,
+    gray 2px,
     transparent 2px,
-    transparent 8px
+    transparent 10px
   );
   --dot-line-horizontal: repeating-linear-gradient(
     to right,
-    lightgray 0%,
-    lightgray 2px,
+    gray 0%,
+    gray 2px,
     transparent 2px,
-    transparent 8px
+    transparent 10px
+  );
+
+  --progress-line-mask-horizontal: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
   );
 }
 

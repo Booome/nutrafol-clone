@@ -58,16 +58,18 @@ const formulaParagraphs = {
 
 export function HeroView() {
   return (
-    <div className="pb-10 md:pb-12 flex flex-col bg-base-200">
-      <p className="mx-auto mt-13 lg:mt-19 xl:mt-20 text-sm font-semibold">
-        #1 Dermatologist-Recommended
-      </p>
-      <p className="text-base-content/70 mx-auto mt-1 text-sm">
-        Hair Growth Supplement Brand*
-      </p>
+    <div className="bg-base-200 md:-mt-32 md:pt-32">
+      <div className="max-w-[var(--width-max)] mx-auto pb-10 md:pb-12 flex flex-col">
+        <p className="mx-auto mt-13 lg:mt-19 xl:mt-20 text-sm font-semibold">
+          #1 Dermatologist-Recommended
+        </p>
+        <p className="text-base-content/70 mx-auto mt-1 text-sm">
+          Hair Growth Supplement Brand*
+        </p>
 
-      <NarrowLayout />
-      <WideLayout />
+        <NarrowLayout />
+        <WideLayout />
+      </div>
     </div>
   );
 }

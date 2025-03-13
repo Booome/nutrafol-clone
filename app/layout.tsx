@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${damion.variable} mx-auto flex w-full max-w-[1600px] flex-col antialiased bg-base-200`}
+        className={`${damion.variable} mx-auto flex w-full flex-col antialiased`}
       >
         <Header />
         {children}

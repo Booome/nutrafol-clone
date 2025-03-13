@@ -43,15 +43,16 @@ const formulaData = [
 
 export function FindYourFormula() {
   return (
-    <div className="flex flex-col items-stretch bg-base-100 text-base-content/80 md:px-6 lg:px-0 pb-1">
+    <div className="w-full flex flex-col items-stretch bg-base-100 text-base-content/80 md:px-6 lg:px-0 pb-1">
       <Image
         src="https://images.ctfassets.net/0rbfqd9c4jdo/6tZtPPywMCfD9TgWAMFsAV/4884b281e35156ab08efd7d8c55620a3/productlist-hero-desktop.jpg?fl=progressive"
         alt="A woman with long, healthy hair"
         width={1920}
         height={1080}
+        className="w-full"
       />
 
-      <div className="flex flex-col bg-base-100 items-center lg:mx-12 xl:mx-28 lg:-mt-58">
+      <div className="max-w-[var(--width-max)] mx-auto flex flex-col bg-base-100 items-center lg:mx-12 xl:mx-28 lg:-mt-58">
         <h2 className="font-serif bg-base-100 text-3xl md:text-4xl lg:text-5xl w-full text-center py-6 lg:py-8 md:border-x lg:border-t border-neutral-content">
           Find your formula
         </h2>

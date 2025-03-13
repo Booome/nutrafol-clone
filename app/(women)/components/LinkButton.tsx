@@ -6,10 +6,12 @@ export function LinkButton({
   children,
   href,
   className,
+  showIcon = false,
 }: {
   children: React.ReactNode;
   href: string;
   className?: string;
+  showIcon?: boolean;
 }) {
   return (
     <Link
@@ -20,7 +22,12 @@ export function LinkButton({
       )}
     >
       {children}
-      <AiOutlineArrowRight className="bg-my-primary-hover hidden size-6 p-1 md:flex" />
+      <AiOutlineArrowRight
+        className={cn(
+          "bg-my-primary-hover hidden size-6 p-1 md:flex",
+          showIcon ? "block md:block" : "hidden",
+        )}
+      />
     </Link>
   );
 }
